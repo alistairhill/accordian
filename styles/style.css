@@ -11,33 +11,37 @@ body {
 nav.main-menu {
   width: 300px;
   display: inline-block;
-  border: thin black solid;
+  box-shadow: 7px 7px 34px -16px rgba(0,0,0,0.75);
 }
 
-ul {
-  padding: 0px;
-  margin: 0px;
+nav > header {
+  margin: 0 0 2px 0;
+  padding: 10px 0;
+  background-color: #F7F9FF;
+  background: #F7F9FF -webkit-gradient(linear, left top, left bottom, from(#DCFFD1), to(#F7F9FF)) no-repeat;
+  text-align: center;
+}
+nav > header > h2 {
+  margin: 0;
+}
+
+ul.main-menu-lvl-top {
+  padding: 0;
   list-style: none;
+  margin: 2px 0 0 0;
 }
 ul > li {
-  border: thin black solid;
+  background-color: #F7F9FF;
+  background: #F7F9FF -webkit-gradient(linear, left top, left bottom, from(#DCFFD1), to(#F7F9FF)) no-repeat;
 }
 
 ul > li > div > i:hover {
   cursor: pointer;
 }
 
-ul.main-menu-lvl-sub {
-  border-top: thin black solid;
-}
-
-nav > header > h2 {
-  text-align: center;
-}
-
 li > div > h3,
 li > div > p  {
-  margin: 2px;
+  margin: 2px 5px;
 }
 
 li > div {
@@ -51,12 +55,29 @@ li > div + div {
   width: 20%;
 }
 li > div + div {
-  text-align: right;
+  text-align: center;
+}
+li > div + div > i {
+  background-color: #DCFFD1;
+  border: thin solid #DDD;
+  font-weight: bold;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #333;
+  margin: 5px 0 0 auto;
 }
 
 ul > li > ul {
+  background-color: #FFF;
+  margin: 2px 0;
+  padding: 0 12px;
   max-height: 0;
-  transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-in-out;
   overflow: hidden;
-  padding: 0 10px;
+}
+
+ul > li > ul > li {
+  margin: 2px 0 0 0;
 }
