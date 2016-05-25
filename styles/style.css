@@ -1,7 +1,3 @@
-* {
-  /*border: thin black solid;*/
-}
-
 body {
   margin: 10px;
   font-size: 14px;
@@ -27,10 +23,10 @@ nav > header > h2 {
 
 ul.main-menu-lvl-top {
   padding: 0;
-  list-style: none;
   margin: 2px 0 0 0;
 }
 ul > li {
+  list-style: none;
   background-color: #F7F9FF;
   background: #F7F9FF -webkit-gradient(linear, left top, left bottom, from(#DCFFD1), to(#F7F9FF)) no-repeat;
 }
