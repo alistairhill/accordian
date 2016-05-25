@@ -23,8 +23,8 @@ ul > li {
   border: thin black solid;
 }
 
-ul > li > div > a {
-  text-decoration: none;
+ul > li > div > i:hover {
+  cursor: pointer;
 }
 
 ul.main-menu-lvl-sub {
@@ -55,5 +55,8 @@ li > div + div {
 }
 
 ul > li > ul {
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
   padding: 0 10px;
 }
