@@ -1,3 +1,59 @@
 * {
+  /*border: thin black solid;*/
+}
+
+body {
+  margin: 10px;
+  font-size: 14px;
+  font-family: verdana;
+}
+
+nav.main-menu {
+  width: 300px;
+  display: inline-block;
   border: thin black solid;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+ul > li {
+  border: thin black solid;
+}
+
+ul > li > div > a {
+  text-decoration: none;
+}
+
+ul.main-menu-lvl-sub {
+  border-top: thin black solid;
+}
+
+nav > header > h2 {
+  text-align: center;
+}
+
+li > div > h3,
+li > div > p  {
+  margin: 2px;
+}
+
+li > div {
+  vertical-align: top;
+  display: inline-block;
+}
+li > div {
+  width: 75%;
+}
+li > div + div {
+  width: 20%;
+}
+li > div + div {
+  text-align: right;
+}
+
+ul > li > ul {
+  padding: 0 10px;
 }
